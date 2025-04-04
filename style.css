@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #67645E;
+}
+
+:root {
+  --color-bg-light: #FFFFFF;
+  --color-bg-dark: #444444;
+  --color-text-light: #67645E;
+  --color-text-dark: #FFFFFF;
+  --color-accent: #F9A8D4;
+  --max-width: 1280px;
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.main-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-align: left;
+}
+
+.main-container {
+  max-width: var(--max-width);
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.list-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--color-accent);
+}
+
+.breed-list {
+  list-style: none;
+}
+
+.breed-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.breed-item:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.detail-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.breed-detail h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--color-accent);
+}
+
+.breed-image {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+.footer-links a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .main-title {
+    font-size: 32px;
+  }
+}
